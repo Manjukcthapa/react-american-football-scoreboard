@@ -24,13 +24,12 @@ const ScoreTigers = props => {
   }, [timer]);
   return (
     <div className="topRow">
-      
       <div className="away">
         <h2 className="away__name">Tigers</h2>
         <div className="away__score"> {scoreTigers} </div>
-       
+        <div className="timer">00:{timer}</div>
       </div>
-      <div className="timer">00:{timer}</div>
+     
       <section>
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={TouchdownAway}>

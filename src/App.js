@@ -9,7 +9,7 @@ import ButtomRow from "./Components/BottomRow"
 function App() {
   
   return (
-    <div className="container">
+    <div className="container ">
       <ScoreTiger/>
       <ScoreLion/>
       <ButtomRow/>
