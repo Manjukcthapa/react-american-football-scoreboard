@@ -3,7 +3,15 @@ import React, { useState } from "react";
 import "./Component.css";
 
 function ScoreLions() {
-  const [scoreLions, setValueLions] = useState(0);
+  const [scoreLions, setScoreLions] = useState(0);
+
+  const TouchdownHome = () => {
+    setScoreLions(scoreLions + 7);
+  };
+
+  const FieldgoalHome = () => {
+    setScoreLions(scoreLions + 3);
+  };
   return (
     <div className="topRow">
       <div className="home">
@@ -16,13 +24,13 @@ function ScoreLions() {
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button
             className="homeButtons__touchdown"
-            onClick={() => setValueLions(scoreLions + 7)}
+            onClick={TouchdownHome}
           >
             Home Touchdown
           </button>
           <button
             className="homeButtons__fieldGoal"
-            onClick={() => setValueLions(scoreLions + 3)}
+            onClick={FieldgoalHome}
           >
             Home Field Goal
           </button>

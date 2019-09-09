@@ -60,7 +60,8 @@
   
   .timer {
     font-family: "Ozone";
-    font-size: 9rem;
+    font-size: 2rem;
+    margin-top: 20px;
     padding: 2rem;
     text-align: center;
     background-color: var(--grey);
