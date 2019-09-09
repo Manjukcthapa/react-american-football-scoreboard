@@ -3,10 +3,11 @@
   --red: #ff2d2b;
 }
 .container{
-height:700px;;
+height:800px;;
 width:70%;
 margin-left: 200px;
 background-color:#808080;
+padding-top: 50px;
 }
 
 

@@ -12,7 +12,7 @@ const ScoreTigers = props => {
     setScoreTigers(scoreTigers + 3);
   };
 
-  const [timer, setTimer] = useState(500);
+  const [timer, setTimer] = useState(50);
   useEffect(() => {
     const clock = setTimeout(() => {
       if (timer > 0) {
@@ -27,7 +27,9 @@ const ScoreTigers = props => {
       <div className="away">
         <h2 className="away__name">Tigers</h2>
         <div className="away__score"> {scoreTigers} </div>
+        <div className="time">
         <div className="timer">00:{timer}</div>
+        </div>
       </div>
      
       <section>

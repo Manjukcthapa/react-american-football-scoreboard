@@ -59,16 +59,23 @@
   }
   
   .timer {
-    font-family: "Ozone";
+    font-family: "green";
     font-size: 2rem;
     margin-top: 20px;
     padding: 2rem;
     text-align: center;
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
     border: 2px solid white;
     border-radius: 6px;
   }
   
+  .time{
+      margin-top: 30px;
+      margin-bottom:20px;
+      background-color: grey;
+
+  }
+
   .bottomRow {
     display: flex;
     justify-content: space-around;
