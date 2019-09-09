@@ -6,7 +6,9 @@ const BottomRow = () => {
   const [quarter, setQuarter] = useState(1);
 
   const nextQuarter = () => {
-    setQuarter(quarter + 1);
+    if (quarter < 4) {
+      setQuarter(quarter + 1);
+    }
   };
 
   return (
