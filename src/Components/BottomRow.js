@@ -18,7 +18,7 @@ const BottomRow = () => {
   };
 
   const nextDown = () => {
-    setDown(Down+ 1);
+    setDown(Down + 1);
   };
 
   const nextToGo = () => {
@@ -43,31 +43,30 @@ const BottomRow = () => {
         <h3 className="quarter__title">Quarter</h3>
         <div className="quarter__value">{quarter}</div>
       </div>
-      <div>
+      <div className='maindivbutton'>
+      <div className="allbutton">
+          <button onClick={nextDown} className="button">
+            Down
+          </button>
+        </div>
+        <div className="allbutton">
+          <button onClick={nextToGo} className="button">
+            To Go
+          </button>
+        </div>
+
         <div className="allbutton">
           <button onClick={ballOn} className="button">
             BallOn
           </button>
         </div>
 
-        <div>
+        <div className="allbutton">
           <button onClick={nextQuarter} className="button">
             Next Quarter
           </button>
         </div>
-
-        <div>
-          <button onClick={nextDown} className="button">
-            Down
-          </button>
-        </div>
-
-        <div>
-          <button onClick={nextToGo} className="button">
-            To Go
-          </button>
-        </div>
-
+      
       </div>
     </div>
   );

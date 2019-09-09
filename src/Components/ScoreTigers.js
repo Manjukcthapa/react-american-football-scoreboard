@@ -12,7 +12,7 @@ const ScoreTigers = props => {
     setScoreTigers(scoreTigers + 3);
   };
 
-  const [timer, setTimer] = useState(100);
+  const [timer, setTimer] = useState(500);
   useEffect(() => {
     const clock = setTimeout(() => {
       if (timer > 0) {
