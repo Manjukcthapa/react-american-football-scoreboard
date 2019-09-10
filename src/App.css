@@ -2,6 +2,14 @@
   --black: #0d0d0d;
   --red: #ff2d2b;
 }
+.container{
+height:800px;;
+width:70%;
+margin-left: 200px;
+background-color:#808080;
+padding-top: 50px;
+}
+
 
 .scoreboard {
   width: 58%;
@@ -68,7 +76,7 @@
   font-size: 9rem;
   padding: 2rem;
   text-align: center;
-  background-color: var(--black);
+  background-color: var(--grey);
   border: 2px solid white;
   border-radius: 6px;
 }
