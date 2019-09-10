@@ -12,7 +12,7 @@ const ScoreTigers = props => {
     setScoreTigers(scoreTigers + 3);
   };
 
-  const [timer, setTimer] = useState(50);
+  const [timer, setTimer] = useState(500);
   useEffect(() => {
     const clock = setTimeout(() => {
       if (timer > 0) {
@@ -40,6 +40,7 @@ const ScoreTigers = props => {
           <button className="awayButtons__fieldGoal" onClick={FieldgoalAway}>
             Away Field Goal
           </button>
+          <button className="awayButtons__safety" onClick={() => setScoreTigers(scoreTigers+ 2)}>Away Safety</button> 
         </div>
       </section>
     </div>

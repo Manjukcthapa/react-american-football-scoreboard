@@ -22,17 +22,17 @@ function ScoreLions() {
       <section>
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
-          <button
-            className="homeButtons__touchdown"
-            onClick={TouchdownHome}
-          >
+          <button className="homeButtons__touchdown" onClick={TouchdownHome}>
             Home Touchdown
           </button>
-          <button
-            className="homeButtons__fieldGoal"
-            onClick={FieldgoalHome}
-          >
+          <button className="homeButtons__fieldGoal" onClick={FieldgoalHome}>
             Home Field Goal
+          </button>
+          <button
+            className="homeButtons__safety"
+            onClick={() => setScoreLions(scoreLions + 2)}
+          >
+            Home Safety
           </button>
         </div>
       </section>

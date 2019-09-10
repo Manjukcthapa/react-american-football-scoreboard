@@ -3,9 +3,9 @@ import React, { useState } from "react";
 
 const BottomRow = () => {
   const [quarter, setQuarter] = useState(1);
-  const [Ballon, setBallon] = useState(1);
-  const [Down, setDown] = useState(1);
-  const [ToGo, setToGo] = useState(1);
+  const [Ballon, setBallon] = useState(0);
+  const [Down, setDown] = useState(0);
+  const [ToGo, setToGo] = useState(0);
 
   const nextQuarter = () => {
     if (quarter < 4) {
